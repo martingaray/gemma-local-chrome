@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Gemma Local Chrome — Local AI Agent",
+  "version": "0.1.0",
+  "description": "Demo by Martin Garay (martingaray.com.ar): chat with Gemma (Gemini Nano) 100% local in Chrome. Private, free, offline.",
+  "author": "Martin Garay — https://www.martingaray.com.ar/",
+  "homepage_url": "https://www.martingaray.com.ar/",
+  "permissions": [
+    "sidePanel",
+    "storage",
+    "tabs",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "sidepanel/sidepanel.html"
+  },
+  "action": {
+    "default_title": "Open Gemma Local Chrome"
+  },
+  "optional_host_permissions": [
+    "<all_urls>"
+  ]
+}
